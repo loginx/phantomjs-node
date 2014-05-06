@@ -83,7 +83,7 @@ var core_require = require;
   };
 
   pageWrap = function(page) {
-    return mkwrap(page, ['open', 'close', 'includeJs', 'sendEvent', 'release', 'uploadFile', 'close', 'goBack', 'goForward', 'reload'], {
+    return mkwrap(page, ['open', 'close', 'includeJs', 'sendEvent', 'release', 'uploadFile', 'goBack', 'goForward', 'reload'], {
       onResourceRequested: function(fn, cb) {
         if (cb == null) {
           cb = (function() {});
