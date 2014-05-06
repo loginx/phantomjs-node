@@ -23,12 +23,10 @@
     "shoe": "~0.0.10"
   },
   "devDependencies": {
-    "browserify": "1.10.9",
-    "traverse": "~0.6.3",
+    "browserify": "~3.44.2",
     "coffee-script": "~1.7.1",
     "express": "3.2.5",
     "temp": "~0.4.0",
-    "ps-tree": "~0.0.2",
     "vows": "~0.7.0",
     "bluebird": "~1.2.3",
     "phantomjs": "~1.9.7-4"

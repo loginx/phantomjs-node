@@ -35,7 +35,7 @@ task "clean", "cleanup build and test artifacts", ->
 task "build", "coffee-compile and browserify phantom", ->
   run(
     "#{bin}/coffee -c phantom.coffee"
-    "#{bin}/browserify shim.coffee -o .shim.js"
+    "#{bin}/coffee -pc shim.coffee | #{bin}/browserify -o .shim.js"
     "cat pre_shim.js .shim.js > shim.js"
   )
     .then(callbacks.success, callbacks.error)
